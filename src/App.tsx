@@ -1,9 +1,13 @@
 import React from 'react';
-import { Menu } from "./components/Menu/menu";
+import { BrowserRouter } from 'react-router-dom';
+import { MainRoutes } from './routes';
+
 
 function App() {
   return (
-    <Menu></Menu>
+    <BrowserRouter>
+    <MainRoutes></MainRoutes>
+    </BrowserRouter>
   );
 }
 
