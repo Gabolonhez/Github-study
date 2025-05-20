@@ -1,8 +1,9 @@
 const Menu = () => {
     return (
     <div className="App ">
-        <div>Menu</div>
-        <h1>Test</h1>
+        <div>
+            <h1>Menu</h1>
+        </div>
     </div>
     )
 }
