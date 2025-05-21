@@ -1,4 +1,4 @@
-import { Menu } from "../../components/Menu/menu";
+import { Menu } from "../Menu/Menu";
 import { ReactNode } from "react";
 
 type ILayout = {
