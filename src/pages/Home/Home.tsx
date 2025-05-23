@@ -27,7 +27,8 @@ const Home = () => {
             navigate(`/${response.login}`); 
             
         } catch (error: any) { 
-            console.error(error); 
+
+            
             setInvalid(true); 
             alert("Usuário não encontrado. Verifique o nome e tente novamente.");
         }
