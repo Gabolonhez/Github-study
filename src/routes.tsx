@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { Profile } from './pages/Profile';
+import { Home } from './pages/Home/Home';
+import { Profile } from './pages/Profile/Profile';
 
 const MainRoutes = () => {
     return (
     <Routes>
         <Route path="/" Component={Home} />
-        <Route path='/profile' Component={Profile}></Route>
+        <Route path='/:user' Component={Profile}></Route>
     </Routes>
     )
 }
