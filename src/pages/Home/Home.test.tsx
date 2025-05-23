@@ -1,6 +1,7 @@
 import { screen, render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { Home } from './Home';
+import { gitApi } from '../../api/github'; 
 
 const mockHistoryPush = jest.fn();
 
@@ -12,7 +13,8 @@ jest.mock("react-router-dom", () => ({
 }));
 
 describe ("Home", () => {
-    it("Must inform the user and direct to the profile page", () => {
+    it("Must inform the user and direct to the profile page", async () => {
+        gitApi.getUser = jest.fn().mockResolvedValue({login: "Gab"})
         render (
             <BrowserRouter>
                 <Home/>
@@ -26,7 +28,7 @@ describe ("Home", () => {
 
         fireEvent.change(input, {target: {value: 'User'}})
         fireEvent.click(button)
-        expect(mockHistoryPush).toHaveBeenCalledWith(`/${user}`)
+        expect(gitApi.getUser).toHaveBeenCalledWith(user)
 
     })
 
