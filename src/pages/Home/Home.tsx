@@ -37,7 +37,7 @@ const Home = () => {
     return (
         <Layout>
             <div className="col-4 m-auto">
-                <h1>Login</h1>
+                <h1 className="mt-5">Login</h1>
                 <div className="mb-3">
                     <label htmlFor="gitUser" className="form-label">Usuário do Github</label>
                     <input 
