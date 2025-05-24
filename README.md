@@ -1,5 +1,5 @@
 # Github study
-![image](https://github.com/user-attachments/assets/cbf4e8c9-d97d-4c49-baee-cf076d13a1a7)
+![image](https://github.com/user-attachments/assets/de395161-3969-4d4a-8114-abdfea8034c7)
 
 ## 📑 Descrição
 Projeto que permite inserir um usuário do Github, retornando uma página com informações do usuário e uma tabela de tecnologias, com testes automatizados.
